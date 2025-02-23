@@ -5,12 +5,21 @@ const dotenv = require("dotenv").config();
 const app = express();
 const port = process.env.PORT || 5000;
 
-// Middleware
-app.use(cors({
-  origin: "https://hostelxrgipt.vercel.app/",  // Allow frontend origin
-  methods: "GET,POST,PUT,DELETE",
-  credentials: true
-}));
+
+const allowedOrigins = ["https://hostelxrgipt.vercel.app"];
+
+const corsOptions = {
+  origin: function (origin, callback) {
+    if (!origin || allowedOrigins.includes(origin)) {
+      callback(null, true);
+    } else {
+      callback(new Error("Not allowed by CORS"));
+    }
+  },
+  credentials: true, // Allow cookies and authentication headers
+};
+
+app.use(cors(corsOptions));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
