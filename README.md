@@ -85,7 +85,7 @@ npm run dev
 ## 📬 Contact
 For any queries or support, feel free to contact:
 
-📧 Email: 22cs2021@rgipt.ac.in 
+📧 Email: sayan1311m@gmail.com
 🌐 Website: [HostelX RGIPT](https://hostelxrgipt.com)
 
 ## ⭐ Contributing
