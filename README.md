@@ -1,6 +1,6 @@
 # HostelX RGIPT - Smart Hostel Management System
 
-![HostelX RGIPT Banner](assets/banner.png)
+![HostelX RGIPT Banner](assets/1.png)
 
 ## 📌 Overview
 HostelX RGIPT is a smart and efficient hostel management system designed to streamline hostel operations at RGIPT. Our platform provides a seamless experience for both students and administrators by handling room allocations, complaints, leave applications, and important updates with ease.
