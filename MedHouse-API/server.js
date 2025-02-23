@@ -7,7 +7,7 @@ const port = process.env.PORT || 5000;
 
 // Middleware
 app.use(cors({
-  origin: "http://localhost:5173",  // Allow frontend origin
+  origin: "https://hostelxrgipt.vercel.app/",  // Allow frontend origin
   methods: "GET,POST,PUT,DELETE",
   credentials: true
 }));
