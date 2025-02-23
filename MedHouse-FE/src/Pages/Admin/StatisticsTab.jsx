@@ -30,14 +30,14 @@ function StatisticsTab() {
   const fetchData = async () => {
     try {
       const endpoints = [
-        "http://localhost:3019/api/accommodation",
-        "http://localhost:3019/api/inquiries",
-        "http://localhost:3019/api/cleaning",
-        "http://localhost:3019/api/medical",
-        "http://localhost:3019/api/clearance",
-        "http://localhost:3019/api/mentoring",
-        "http://localhost:3019/api/leave",
-        "http://localhost:3019/api/user/getAllUsers",
+        "https://hostelxrgipt.onrender.com/api/accommodation",
+        "https://hostelxrgipt.onrender.com/api/inquiries",
+        "https://hostelxrgipt.onrender.com/api/cleaning",
+        "https://hostelxrgipt.onrender.com/api/medical",
+        "https://hostelxrgipt.onrender.com/api/clearance",
+        "https://hostelxrgipt.onrender.com/api/mentoring",
+        "https://hostelxrgipt.onrender.com/api/leave",
+        "https://hostelxrgipt.onrender.com/api/user/getAllUsers",
       ];
 
       const counts = await Promise.all(

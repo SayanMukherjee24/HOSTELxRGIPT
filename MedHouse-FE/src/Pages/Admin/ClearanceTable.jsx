@@ -14,7 +14,7 @@ function ClearanceTable() {
   useEffect(() => {
     // Fetch data from the API endpoint
     axios
-      .get("http://localhost:3019/api/clearance")
+      .get("https://hostelxrgipt.onrender.com/api/clearance")
       .then((response) => {
         setClearanceRequests(response.data);
       })
@@ -26,7 +26,7 @@ function ClearanceTable() {
   const handleStatusChange = async (id, newStatus) => {
     try {
       // Update the status of the clearance request in the backend
-      await axios.patch(`http://localhost:3019/api/clearance/${id}/status`, {
+      await axios.patch(`https://hostelxrgipt.onrender.com/api/clearance/${id}/status`, {
         status: newStatus,
       });
 

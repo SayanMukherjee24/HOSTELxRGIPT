@@ -15,7 +15,7 @@ function AttendeeTable() {
   useEffect(() => {
     // Fetch data from the API endpoint
     axios
-      .get("http://localhost:3019/api/accommodation")
+      .get("https://hostelxrgipt.onrender.com/api/accommodation")
       .then((response) => {
         setAttendees(response.data);
       })

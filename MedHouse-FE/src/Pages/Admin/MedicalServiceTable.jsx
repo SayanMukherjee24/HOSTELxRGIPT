@@ -14,7 +14,7 @@ function MedicalServiceTable() {
   useEffect(() => {
     // Fetch data from the API endpoint
     axios
-      .get("http://localhost:3019/api/medical")
+      .get("https://hostelxrgipt.onrender.com/api/medical")
       .then((response) => {
         setMedicalServiceRequests(response.data);
       })
@@ -26,7 +26,7 @@ function MedicalServiceTable() {
   const handleStatusChange = async (id, newStatus) => {
     try {
       // Update the status of the medical service request in the backend
-      await axios.patch(`http://localhost:3019/api/medical/${id}/status`, {
+      await axios.patch(`https://hostelxrgipt.onrender.com/api/medical/${id}/status`, {
         status: newStatus,
       });
 

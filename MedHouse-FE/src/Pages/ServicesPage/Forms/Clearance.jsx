@@ -34,7 +34,7 @@ function Clearance() {
   const handleSubmit = (e) => {
     e.preventDefault();
     axios
-      .post("http://localhost:3019/api/clearance", formData)
+      .post("https://hostelxrgipt.onrender.com/api/clearance", formData)
       .then((response) => {
         // Handle success
         console.log(response.data); // Log the response for debugging

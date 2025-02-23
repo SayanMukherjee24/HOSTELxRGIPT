@@ -10,7 +10,7 @@ function Signin({ setSignin, setLoginState }) {
 
   function signInUser(e) {
     e.preventDefault();
-    fetch("http://localhost:3019/api/user/signin", {
+    fetch("https://hostelxrgipt.onrender.com/api/user/signin", {
       method: "post",
       headers: {
         "Content-Type": "application/json",

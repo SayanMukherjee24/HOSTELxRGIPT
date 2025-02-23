@@ -14,7 +14,7 @@ function CleaningTable() {
   useEffect(() => {
     // Fetch data from the API endpoint
     axios
-      .get("http://localhost:3019/api/cleaning")
+      .get("https://hostelxrgipt.onrender.com/api/cleaning")
       .then((response) => {
         setCleaningRequests(response.data);
       })
@@ -26,7 +26,7 @@ function CleaningTable() {
   const handleStatusChange = async (id, newStatus) => {
     try {
       // Update the status of the cleaning request in the backend
-      await axios.patch(`http://localhost:3019/api/cleaning/${id}/status`, {
+      await axios.patch(`https://hostelxrgipt.onrender.com/api/cleaning/${id}/status`, {
         status: newStatus,
       });
 

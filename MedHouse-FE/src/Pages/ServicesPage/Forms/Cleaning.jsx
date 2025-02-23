@@ -43,7 +43,7 @@ function Cleaning() {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:3019/api/cleaning",
+        "https://hostelxrgipt.onrender.com/api/cleaning",
         formData
       );
 

@@ -18,7 +18,7 @@ function Signup({ setSignin }) {
     if (password === conPassword) {
       try {
         const response = await axios.post(
-          "http://localhost:3019/api/user/signup",
+          "https://hostelxrgipt.onrender.com/api/user/signup",
           {
             name,
             email,

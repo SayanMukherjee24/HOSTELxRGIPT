@@ -38,5 +38,5 @@
     "style-loader": "^3.3.3",
     "vite": "^4.5.0"
   },
-  "proxy": "http://localhost:3019"
+  "proxy": "https://hostelxrgipt.onrender.com"
 }

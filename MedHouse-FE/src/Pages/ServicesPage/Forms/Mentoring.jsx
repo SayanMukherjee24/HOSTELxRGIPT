@@ -17,7 +17,7 @@ function Mentoring() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:3019/api/mentoring", formData);
+      await axios.post("https://hostelxrgipt.onrender.com/api/mentoring", formData);
       Swal.fire({
         icon: "success",
         title: "Success!",

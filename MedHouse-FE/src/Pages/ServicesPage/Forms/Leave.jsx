@@ -22,7 +22,7 @@ function Leave() {
     e.preventDefault();
     try {
       const response = await axios.post(
-        "http://localhost:3019/api/leave",
+        "https://hostelxrgipt.onrender.com/api/leave",
         formData
       );
 

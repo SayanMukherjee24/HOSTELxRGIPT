@@ -24,7 +24,7 @@ function Medical() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("http://localhost:3019/api/medical", formData);
+      await axios.post("https://hostelxrgipt.onrender.com/api/medical", formData);
       Swal.fire({
         icon: "success",
         title: "Success!",

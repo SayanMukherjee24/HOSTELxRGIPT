@@ -14,7 +14,7 @@ function LeaveRequestTable() {
   useEffect(() => {
     // Fetch data from the API endpoint
     axios
-      .get("http://localhost:3019/api/leave")
+      .get("https://hostelxrgipt.onrender.com/api/leave")
       .then((response) => {
         setLeaveRequests(response.data);
       })
@@ -26,7 +26,7 @@ function LeaveRequestTable() {
   const handleStatusChange = async (id, newStatus) => {
     try {
       // Update the status of the leave request in the backend
-      await axios.patch(`http://localhost:3019/api/leave/${id}/status`, {
+      await axios.patch(`https://hostelxrgipt.onrender.com/api/leave/${id}/status`, {
         status: newStatus,
       });
 
