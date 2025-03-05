@@ -86,7 +86,7 @@ npm run dev
 For any queries or support, feel free to contact:
 
 📧 Email: sayan1311m@gmail.com
-🌐 Website: [HostelX RGIPT](https://hostelxrgipt.com)
+🌐 Website: [HostelX RGIPT](https://hostelxrgipt.vercel.app)
 
 ## ⭐ Contributing
 We welcome contributions from the community! To contribute:
